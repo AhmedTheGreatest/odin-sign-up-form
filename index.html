@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <div class="overlay">
+                    <img class="logo" src="assets/images/odin-lined.png" alt="logo">
+                    <p>ODIN</p>
+                </div>
+            </div>
+            <div class="footer">
+                <p>
+                    Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA" target="_blank">Unsplash</a>
+                </p>
+            </div>
+        </div>
+        <main>
+            <section class="cta">
+                <h4>
+                    This is not a real online service! You know you need something like 
+                    this in your life to help you realize your deepest dreams.
+                </h4>
+                <p>Sign up <em>now</em> to get started!</p>
+                <br>
+                <h4>You <em>know</em> you want to.</h4>
+                <br>
+            </section>
+            <section class="form-section">
+                <form action="#" method="POST">
+                    <fieldset>
+                        <div class="legend-container">
+                            <legend>Let's do this!</legend>
+                        </div>
+                        <div class="form-fields">
+                            <div class="field">
+                                <label for="first_name">First Name</label>
+                                <input type="text" name="first_name" id="first_name" maxlength="80" required>
+                            </div>
+                            <div class="field">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" id="last_name"  maxlength="80" required>
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="field">
+                                <label for="phone_number">Phone Number</label>
+                                <input type="tel" name="phone_number" id="phone_number">
+                            </div>
+                            <div class="field">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" required>
+                                <p id="password-msg">* Passwords do not match</p>
+                            </div>
+                            <div class="field">
+                                <label for="confirm_password">Confirm Password</label>
+                                <input type="password" name="confirm_password" id="confirm_password" required>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button class="create-account" type="submit">Create Account</button>
+                </form>
+                <p class="login">Already have an account? <a href="#">Log in</a></p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
